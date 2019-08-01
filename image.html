@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRICKET</title>
+    <script>
+        function showImage(f){
+            if (f === "sachin")
+                message = "Sachin Tendulkar has the record of scoring most 100's and highest run scorer in the cricket history"
+            else if (f === "virat")
+                message = "Virat Kohli is the present captain of Team India and at the second place of most 100's"
+            else if (f === "dhoni")
+                message = "MS Dhoni was the former captian of Team India and is the only captain to win 3 Different ICC trophies"
+            document.getElementById("data").innerHTML="<h2>"+message+"</h2>"
+        }
+    </script>
+</head>
+<body>
+    <h2 style = "margin: auto">Who is your favorite player????</h2>
+    <div class = "row">
+        <!-- <div class = "column"> -->
+            <img src="img/sachin.jpeg" alt="SACHIN TENDULKAR" style="width:200px" onclick="showImage('sachin')">
+        <!-- </div> -->
+        <!-- <div class = "column"> -->
+            <img src="img/virat.jpeg" alt="VIRAT KOHLI" style="width:200px;height:100%" onclick="showImage('virat')">
+        <!-- </div> -->
+        <!-- <div class = "column"> -->
+            <img src="img/dhoni.jpeg" alt="M S DHONI" style="width:200px" onclick="showImage('dhoni')">
+        <!-- </div> -->
+
+    </div>
+    <div id="data"></div>
+</body>
+</html>

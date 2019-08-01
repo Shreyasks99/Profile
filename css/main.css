@@ -41,3 +41,11 @@ label{
     float:left;
     width:200px
 }
+.column{
+    float:left;
+    widows: 15%;
+    padding:15px;
+}
+.row::after{
+    
+}
